@@ -1,6 +1,6 @@
 var para = document.querySelector('p');
 var style = document.querySelector('style');
-var font  = document.querySelector('style');
+var font  = document.querySelector('style.test');
 
 para.addEventListener('click', updateName);
 
