@@ -1,6 +1,6 @@
 var para = document.querySelector('p');
 var style = document.querySelector('style');
-var font  = document.querySelector('style #font');
+var font  = document.querySelector('style');
 
 para.addEventListener('click', updateName);
 
@@ -19,8 +19,8 @@ function updateStyle() {
 }
 
 function updateFont() {
-  var font = prompt("like the font?")
-  if (font != "yes") {
-    font.textContent = 'p {font: monotype;}';
+  var serif = prompt("like the font?")
+  if (serif == "no") {
+    font.textContent = 'p {font-family: "Times New Roman", Times, serif;}';
   }
 }
