@@ -1,6 +1,7 @@
 var para = document.querySelector('p');
 var style = document.querySelector('style');
 var font  = document.querySelector('style.test');
+var grow = document.querySelector('style.grow');
 
 para.addEventListener('click', updateName);
 
@@ -28,8 +29,8 @@ function updateFont() {
 }
 
 function growFont(){
-  var grow = prompt("Grow?")
-  if (grow == "yes") {
-    font.getElementByClass("test").id = "grow";
+  var big = prompt("Grow?")
+  if (big == "yes") {
+    grow.textContent = 'p {font-size: 250px;}';
   }
 }
