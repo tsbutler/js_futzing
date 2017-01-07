@@ -2,6 +2,7 @@ var para = document.querySelector('p');
 var style = document.querySelector('style');
 var font  = document.querySelector('style.test');
 var grow = document.querySelector('style.grow');
+var winner = document.querySelector('h1');
 
 para.addEventListener('click', updateName);
 
@@ -10,6 +11,8 @@ para.addEventListener('click', updateStyle);
 para.addEventListener('click', updateFont);
 
 para.addEventListener('click', growFont);
+
+para.addEventListener('click', displayWinner);
 
 function updateName() {
   var name = prompt('Enter a new name');
@@ -33,4 +36,8 @@ function growFont(){
   if (big == "yes") {
     grow.textContent = 'p {font-size: 250px;}';
   }
+}
+
+function displayWinner(){
+  winner.innerHTML = "You did it!";
 }
