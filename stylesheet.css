@@ -13,3 +13,11 @@ p {
   display: inline-block;
   cursor: pointer;
 }
+
+h1 {
+  color: green;
+}
+
+#change {
+  color: red;
+}
