@@ -40,4 +40,5 @@ function growFont(){
 
 function displayWinner(){
   winner.innerHTML = "You did it!";
+  document.getElementById("status").className = "change";   
 }
